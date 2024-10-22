@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<title>L'Archive Hugo</title>
+
+		<!--- META -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Lavinia Bonfatti Sabbioni" />
+		<meta name="description" content="Archivio dedicato alla vita e alle opere del francese Victor Hugo" />
+		<meta name="keywords" content="Victor Hugo, romanzo, dramma, poesia, disegno, politica, Francia, romanticismo" />
+
+
+		<!--- DC --->
+
+		<!--- FOGLI DI STILE -->
+	</head>
+
+	<body>
+
+	 <!--- NAVBAR -->
+     <nav class="secondary">
+       <span id="home"><a href="index.html">Home</a></span>
+       <span><a href="#">Progetto</a></span>
+       <span><a href="timeline.html">Biografia</a></span>
+       <span><a href="catalogo.html">Catalogo</a></span>
+       <span><a href="#">Percorsi</a></span>
+     </nav>	
+
+	 <!-- inserisci search bar -->
+	<form class="searchBar" action="/action_page.php">
+      <input type="text" placeholder="Cerca.." name="search" autocomplete="off">
+      <button type="submit">Vai</button>
+    </form> 
+
+
+    <!-- ASIDE LATO SINISTRO --> 
+    <div class="pageContent">
+    	<aside class="left">
+    		<h3>Filtra per:</h3>
+    		<div class="filterBar">
+    			<button class="accordion">Genere</button>
+                <div class="panel">
+                	<form>
+                		<!-- CONTROLLA QUESTA PARTE DI CODICE -->
+                		<input type="checkbox" id="opTeatroCheck" onclick="Filter('opTeatroCheck', 'opTeatro')">
+                        <label>Opere teatrali</label><br/>
+                        <input type="checkbox" id="romCheck" onclick="Filter('romCheck', 'rom')">
+                        <label>Romanzi</label><br/>
+                        <input type="checkbox" id="poesiaCheck" onclick="Filter('poesiaCheck', 'poesia')">
+                        <label>Poesie</label><br/>
+                        <input type="checkbox" id="raccPostCheck" onclick="Filter('raccPostCheck', 'raccPost')">
+                        <label>Raccolte postume</label><br/>
+                	</form>
+                </div>
+                <button class="accordion">Tema</button>
+                <div class="panel">
+                </div>
+                <button class="accordion">Titolo dell'opera</button>
+                <div class="panel">
+                </div>
+                <button class="accordion">Data di composizione</button>
+                <div class="panel">
+                </div>
+                <button class="accordion">Formato</button>
+                <div class="panel">
+                	<form>
+                		<input type="checkbox" id="imgCheck" onclick="Filter('imgCheck', 'image')">
+                        <label>Disegni</label><br/>
+                        <input type="checkbox" id="audioCheck" onclick="Filter('audioCheck', 'audio')">
+                        <label>Audio</label><br/>
+                        <input type="checkbox" id="textCheck" onclick="Filter('textCheck', 'text')">
+                        <label>Testi</label><br/>
+                	</form>
+                </div>
+                <button class="accordion">Citazione</button>
+                <div class="panel">
+                </div>
+    		</div>
+    	</aside>
+    </div>
+
+
+    <!-- ASIDE LATO DESTRO -->
+    <div class="pageContent">
+    	<aside class="right">
+    		<h3></h3>
+    		<p></p>
+    	</aside>
+    </div>
+
+
+
+    <!-- GRID CONTAINER -->
+    <section class="gridContainer">
+
+    <!-- CARDS -->
+    <div class="card">
+     <div class="grid-item" n="1"></div>
+  		<img src="img_avatar.png" alt="Avatar" />
+  	    <div class="container">
+    	  <h4><b>John Doe</b></h4> 
+    	  <p>Architect & Engineer</p> 
+  	    </div>
+	</div>
+    <div class="card">
+     <div class="grid-item" n="2"></div>
+  		<img src="img_avatar.png" alt="Avatar" />
+  	    <div class="container">
+    	  <h4><b>John Doe</b></h4> 
+    	  <p>Architect & Engineer</p> 
+  	    </div>
+	</div>
+	<div class="card">
+     <div class="grid-item" n="3"></div>
+  		<img src="img_avatar.png" alt="Avatar" />
+  	    <div class="container">
+    	  <h4><b>John Doe</b></h4> 
+    	  <p>Architect & Engineer</p> 
+  	    </div>
+	</div>
+	<div class="card">
+     <div class="grid-item" n="4"></div>
+  		<img src="img_avatar.png" alt="Avatar" />
+  	    <div class="container">
+    	  <h4><b>John Doe</b></h4> 
+    	  <p>Architect & Engineer</p> 
+  	    </div>
+	</div>
+	<div class="card">
+     <div class="grid-item" n="5"></div>
+  		<img src="img_avatar.png" alt="Avatar" />
+  	    <div class="container">
+    	  <h4><b>John Doe</b></h4> 
+    	  <p>Architect & Engineer</p> 
+  	    </div>
+	</div>
+	<div class="card">
+     <div class="grid-item" n="6"></div>
+  		<img src="img_avatar.png" alt="Avatar" />
+  	    <div class="container">
+    	  <h4><b>John Doe</b></h4> 
+    	  <p>Architect & Engineer</p> 
+  	    </div>
+	</div>
+	<div class="card">
+     <div class="grid-item" n="7"></div>
+  		<img src="img_avatar.png" alt="Avatar" />
+  	    <div class="container">
+    	  <h4><b>John Doe</b></h4> 
+    	  <p>Architect & Engineer</p> 
+  	    </div>
+	</div>
+	<div class="card">
+     <div class="grid-item" n="8"></div>
+  		<img src="img_avatar.png" alt="Avatar" />
+  	    <div class="container">
+    	  <h4><b>John Doe</b></h4> 
+    	  <p>Architect & Engineer</p> 
+  	    </div>
+	</div>
+	<div class="card">
+     <div class="grid-item" n="9"></div>
+  		<img src="img_avatar.png" alt="Avatar" />
+  	    <div class="container">
+    	  <h4><b>John Doe</b></h4> 
+    	  <p>Architect & Engineer</p> 
+  	    </div>
+	</div>
+	<div class="card">
+     <div class="grid-item" n="10"></div>
+  		<img src="img_avatar.png" alt="Avatar" />
+  	    <div class="container">
+    	  <h4><b>John Doe</b></h4> 
+    	  <p>Architect & Engineer</p> 
+  	    </div>
+	</div>
+	<div class="card">
+     <div class="grid-item" n="11"></div>
+  		<img src="img_avatar.png" alt="Avatar" />
+  	    <div class="container">
+    	  <h4><b>John Doe</b></h4> 
+    	  <p>Architect & Engineer</p> 
+  	    </div>
+	</div>
+
+
+    <!-- PROVA QUESTA ALTERNATIVA -->
+ 	<div class="row">
+        <div class="equalcolumn">
+            <div class="card">
+            <div class="img img-PA-1"></div>
+            <div class="container">
+                <h4><b>Un silenzio e uno sguardo</b></h4>
+                <p><span>Tipologia:&nbsp;</span>Disegno</p>
+                <p><span>Data di creazione:&nbsp;</span>ca.1953</p>
+                <p><span>Collocazione:&nbsp;</span>Nuoro</p>
+                <a href="item.html" class="button_opera" title="Vai all'opera">Vai all'opera</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    </section>
+
+
+    <br/>
+    <!--- FOOTER -->
+    <footer class="dark">&copy; Lavinia Bonfatti Sabbioni 2024 - L'Archive Hugo | Corso di Digital Humanities</footer>
+
+
+
+
+    <!-- script -->
+    <script src="js/script.js"></script>
+	</body>
+
+
+</html>
