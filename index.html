@@ -14,92 +14,61 @@
 		<!--- DC --->
 
 		<!--- FOGLI DI STILE -->
-		<link rel="stylesheet" href="" />
+		<link rel="stylesheet" href="style/style1.css" />
+		<link href='https://fonts.googleapis.com/css?family=Abhaya Libre' rel='stylesheet'>
+
 	</head>
 
 
 	<body>
 			<!--- NAVBAR -->
-	<div id="topCont">
       <nav class="main">
         <span class="actualPage"><a>Home</a></span>
         <span><a href="#">Progetto</a></span>
-        <span><a href="timeline.html">Biografia</a></span>
+        <span><a href="#">Biografia</a></span>
         <span><a href="catalogo.html">Catalogo</a></span>
-        <span><a href="pathways.html">Percorsi</a></span>
+        <span><a href="#">Altro</a></span>
       </nav>
-      <header>
-          <div class="text">
-            <h1>L’Archive Hugo</h1>
-            <h2>Victor Hugo a tutto tondo</h2>
-          </div>
-      </header>
-    </div>
 
-     <!-- inserisci search bar -->
-	<form class="searchBar" action="/action_page.php">
-      <input type="text" placeholder="Cerca.." name="search" autocomplete="off">
-      <button type="submit">Vai</button>
-    </form> 
-
-      <!--- IMMAGINE CON TESTO -->
-      <div class="container">
-       <img src="img/Victor_Hugo.jpg" alt="Notebook" style="width:100%;">
-       <div class="content">
-       <h1>L'Archive Hugo</h1>
-       <p>Victor Hugo a tutto tondo</p>
+         <!-- hero image -->
+      <div class="hero-image">
+	   <div class="hero-text">
+	    <h1>L'Archive Hugo</h1>
+	    <button><a href="catalogo.html">Esplora</a></button>
+	   </div>
       </div>
-</div>
+
+
 
     <!--- SEZIONE DI INTRODUZIONE AL PROGETTO --->
     <section class="light projectinfo">
       <h3>IL PROGETTO</h3>
       <p>
-        <span style="font-style: italic;">L'Archive Hugo</span> è un progetto nato nel 2024 con l’obiettivo di ... relative alla vita e all’opera di <a href="#">Victor Hugo</a> (1802-1885).
-      </p> 
-      <p>
-       
+        <a href="#">Victor Hugo</a> (1802-1885), celebre scrittore, poeta e artista francese, ha lasciato un'impronta indelebile nella cultura europea e mondiale. Autore di capolavori come <span style="font-style: italic;">I Miserabili</span> e <span style="font-style: italic;">Notre-Dame de Paris</span>, Hugo è noto non solo per la sua abilità letteraria, ma anche per il suo impegno sociale e politico, oltre che per le sue sorprendenti opere artistiche. Questo progetto - nato nel 2024 - raccoglie in primis materiali che rappresentano l'essenza della sua produzione creativa: dai romanzi e dalle poesie ai disegni che rivelano un lato meno noto della sua espressione artistica; ma <span style="font-style: italic;">L'Archive Hugo</span> nasce con l’obiettivo di raccogliere anche opere ispirate al suo lavoro, come adattamenti teatrali, film, musical (tra cui il celebre <span style="font-style: italic;">Les Misérables</span>), audio e video. L'obiettivo è offrire un percorso immersivo nell'universo hugoniano, esplorando l'impatto duraturo che Hugo continua ad avere nell'immaginario collettivo.
       </p>
-      <p>
-        Particolare attenzione è inoltre riservata alla ricezione del compositore, tanto da parte dei contemporanei quanto dei posteri. 
-      </p>
-      
-      <div class="alignButtons">
-        <button class="btnStyled"><a class="btn" href="#">Maggiori informazioni</a></button>
-        <button class="btnStyled"><a class="btn" href="listitems.html">Esplora il catalogo</a></button>
-      </div>
     </section>
 
-    <!--- QUOTES/CITAZIONI DELL'AUTORE --->
-    <section>
-    	<div class="slideshow-container">
-    		<div class="numbertext">1 / 3</div>
-            <img src="img1.jpg" style="width:100%">
-            <div class="text">C'è uno spettacolo più grande del mare, il cielo; c'è uno spettacolo più grande del cielo, l'interno dell'anima.</div>
+    
 
-            <div class="numbertext">2 / 3</div>
-            <img src="img2.jpg" style="width:100%">
-            <div class="text">Guardò la sua vita e gli parve orribile, la sua anima e gli parve detestabile. E purtuttavia un dolce chiarore era su questa vita e su questa anima; gli sembrava di vedere Satana alla luce del paradiso.</div>
 
-            <div class="numbertext">3 / 3</div>
-            <img src="img3.jpg" style="width:100%">
-            <div class="text">La gioia suprema della vita sta nella convinzione di essere amati; amati per se stessi, diciamo meglio, amati malgrado se stessi (...)</div>
-    	</div>
+   <!--- QUOTES/CITAZIONI DELL'AUTORE -->
 
-    	<!--- next/previous -->
-    	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-        <!--- puntini -->
-        <div style="text-align:center">
-         <span class="dot" onclick="currentSlide(1)"></span>
-         <span class="dot" onclick="currentSlide(2)"></span>
-         <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
 
-    </section>
 
-    <!--- SEZIONE BIOGRAFIA DELL'AUTORE -->
+
+
+
+
+
+
+
+
+
+
+
+
+   <!--- SEZIONE BIOGRAFIA DELL'AUTORE -->
     <section>
       <h3>VICTOR HUGO</h3>
       <p>
@@ -129,11 +98,19 @@
 
 
     <!--- FOOTER -->
-    <footer class="dark">&copy; Lavinia Bonfatti Sabbioni 2024 - L'Archive Hugo | Corso di Digital Humanities</footer>
+    <footer class="dark">
+    	<p>
+    	<a href="#" title="Credits">Credits</a> |
+        <a href="#" title="Licenze">Licenze</a>
+        </p>
+        
+        </br>
+    	<p>&copy; Lavinia Bonfatti Sabbioni 2024 - L'Archive Hugo | Corso di Digital Humanities</p>
+    </footer>
 
 	
 	<!-- Javascript -->
-	 
-
+	<script src="js/script.js"></script>
+	
 	</body>
 </html>
