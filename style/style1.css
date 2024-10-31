@@ -1,0 +1,384 @@
+/* TUTTE LE PAGINE PRIMA */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Abhaya Libre;
+  font-size: 20px;
+  background-color: #ede0d4;
+}
+
+nav a {
+  color: #e6ccb2;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-weight: 500;
+  font-optical-sizing: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+h3 {
+  color: #7f5539;
+  font-size: 22px;
+  margin-bottom: 20px;
+  letter-spacing: 0.8px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+footer {
+  font-size: smaller;
+  background-color: #fefae0;
+  text-align: center;
+  padding: 1.5%;
+  width: 100%;
+
+}
+
+
+
+
+/* INDEX */
+
+
+/* Navbar*/
+nav.main {
+ padding: 10px;
+}
+
+
+/* Navbar container */
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #fefae0;
+}
+
+/* Main navigation bar styles */
+nav.main {
+  display: flex;
+  gap: 10px; /* Spazio tra items navbar */
+}
+
+nav.main a {
+  color: #003049;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+/* hero image */
+body, html {
+    height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image. This will make the text easier to read */
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/maisons.jpg");
+
+  /* dimensioni img */
+  height: 50%;
+  width: 40%
+
+  /* posizione e centratura img Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* testo della hero img */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero-text button:hover {
+  text-decoration: none;
+  background-color: #;
+}
+
+
+/* progetto */
+
+.projectinfo a {
+ text-decoration: none;
+ color: #7f5539;
+ font-weight: 600;
+}
+
+.projectinfo a:hover {
+  text-decoration: none;
+}
+
+
+
+
+/* sezione Victor Hugo nella home page*/
+.bg-darkBeige {
+  background-color: #ddb892;
+  margin: 0;
+}
+
+.alignButtons {
+  border: none;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+button {
+  color: #7F5539;
+  background-color: #EDE0D4;
+  border: none;
+  padding: 12px 12px;
+}
+
+.btnStyled {
+  background-color: #EDE0D4;
+}
+
+.btnStyled .btn {
+  color: #7F5539;
+  text-decoration: none;
+  font-size: 15px;
+
+}
+
+.btnStyled .btn: hover {
+  text-decoration: none;
+  background-color: #9C6644;
+
+}
+
+
+
+
+
+/* slideshow */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+
+
+
+/* PAGINA CATALOGO */
+
+/* Aside lato sinistro */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* cards */
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 250px;
+  height: auto;
+  background-color: #DDE5B6;
+  border-radius: 5px;
+  margin: 30px;
+  overflow: hidden;
+}
+
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* ombreggiatura */
+}
+
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.card .container {
+  padding: 2px 16px;
+  text-align: center;
+}
+
+.card img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+
+}
+
+
+/* pagination */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style-type: none; /* rimuove i puntini */
+  padding: 10px; /* spazio dentro il container della pagination */
+  margin: 20px 0; /* spazio sopra e sotto */
+}
+
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a:hover {
+  background-color: #E6CCB2; 
+  color: black;
+}
+
+
+/* link active*/
+.pagination a.active {
+  background-color: #E6CCB2;
+  color: black;
+}
+
+/* sfondo grigetto on hover */
+.pagination a:hover:not(.active) {background-color: #ddd;}
