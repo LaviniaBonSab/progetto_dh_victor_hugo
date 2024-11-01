@@ -29,15 +29,10 @@
        <span><a href="#">Altro</a></span>
      </nav>	
 
-    <!-- inserisci search bar -->
-	<form class="searchBar" action="/action_page.php">
-      <input type="text" placeholder="Cerca.." name="search" autocomplete="off">
-      <button type="submit">Vai</button>
-    </form> 
-
 
    <!-- grid due colonne -->
-   	<div class="row">
+   <div class="main-content">
+   	<div class="column">
       <!-- colonna di sinistra -->
       <div class="leftcolumn">
         <!-- breadcrumbs -->
@@ -55,12 +50,28 @@
           </ul>
         </div>
 
+        <!-- inserisci search bar -->
+		<form class="searchBar" action="/action_page.php">
+	      <input type="text" placeholder="Cerca.." name="search" autocomplete="off">
+	      <button type="submit">Vai</button>
+	    </form> 
+
         <!-- scopri di più sull'opera -->
+        <br />
         <div>
           <p>Scopri di più sull'opera</p>
-          <a href="https://www.maisonsvictorhugo.paris.fr/en/paris" class="btn bg-gold" title=" vedi il sito Maisons Victor Hugo" target="_blank">Esplora la Maison de Victor Hugo</a>
+          <a href="https://www.maisonsvictorhugo.paris.fr/en/paris" class="btn bg-green" title="vedi il sito Maisons Victor Hugo" target="_blank">Esplora la Maison de Victor Hugo</a>
+          <br />
+          <p>Visita anche</p>
+          <a href="https://www.maisonsvictorhugo.paris.fr/en/paris" class="btn bg-green" title="vedi il sito ..." target="_blank">Esplora ALTRO SITO</a>
+          <br />
+          <p>Accedi ai formati XML/DC</p>
+          <a href="" class="btn bg-green" title="file xml" target="_blank">File XML</a>
+          <a href="" class="btn bg-green" title="file DC" target="_blank">File DC</a>
         </div>
-     </div>
+      </div>
+
+
 
      <!-- colonna di destra -->
      <div class="rightcolumn">
@@ -96,7 +107,7 @@
           </div>
         </div>  
      </div>
-
+    </div>
 
  
   

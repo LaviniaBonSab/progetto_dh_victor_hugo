@@ -43,7 +43,10 @@ footer {
 
 }
 
-
+footer.dark a {
+  text-decoration: none;
+  color: black;
+}
 
 
 /* INDEX */
@@ -144,6 +147,7 @@ body, html {
   margin: 0;
 }
 
+
 .alignButtons {
   border: none;
   padding: 12px 20px;
@@ -180,136 +184,77 @@ button {
 
 
 
-/* slideshow */
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-
-
-
-
-
 /* PAGINA CATALOGO */
 
 /* Aside lato sinistro */
+.pageContent {
+  display: flex; /* allinea sidebar e main content di fianco */
+  justify-content: left;
+  padding: 20px; /* spazio dentro */
+}
+
+/* sidebar */
+.left {
+  width: 250px; 
+  background-color: #fefae0;
+  padding: 15px; /* Spazio dentro alla sidebar */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* effetto ombreggiato */
+}
+
+
+/* header h3 */
+.left h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 15px; /* Spazio sotto */
+}
+
+
+.filterBar {
+  margin-bottom: 10px; /* Space sotto ogni gruppo */
+}
+
+
+/* accordion */
+.accordion {
+  background-color: #E6CCB2; /* colore bg del bottone */
+  color: black; 
+  cursor: pointer; /* Indicate clickable */
+  padding: 10px; /* Space inside the button */
+  border: none; 
+  text-align: left; /* Align text to the left */
+  outline: none; 
+  font-size: 14px; 
+  transition: background-color 0.3s; 
+}
+
+.accordion:hover {
+  background-color: #DDB892; 
+}
+
+
+.panel {
+  display: none; /* mostra contenuto dell'accordion all'inizio */
+  padding: 10px; 
+  background-color: #f1f1f1; 
+  border: 1px solid #ddd; 
+  margin-top: 5px; /* Spazio sopra*/
+}
+
+.panel input[type="checkbox"] {
+  margin-right: 5px; /* Space between checkbox and label */
+}
+
+.panel label {
+  font-size: 13px; 
+  display: block; /* verticale */
+  margin-bottom: 5px; /* Spazio sotto*/
+}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* cards */
+/* Cards */
 .card {
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -345,7 +290,11 @@ button {
   width: 100%;
   object-fit: cover;
   border-radius: 5px;
+}
 
+.card a {
+  text-decoration: none;
+  color: black;
 }
 
 
@@ -382,3 +331,155 @@ button {
 
 /* sfondo grigetto on hover */
 .pagination a:hover:not(.active) {background-color: #ddd;}
+
+
+
+
+
+
+
+
+
+
+/* PAGINA DELL'ITEM SINGOLO */
+
+.column {
+  display: flex;
+  gap: 20px; /* Spazio tra colonne */
+}
+
+.leftcolumn {
+  width: 20%; 
+  padding: 15px;
+}
+
+.leftcolumn > div {
+  margin-bottom: 15px; /* Spazio sotto */
+}
+
+
+/* colonna con breadcrumb */
+.breadcrumb {
+  list-style: none; /* niente puntini */
+  padding: 0; 
+  margin: 0; 
+  display: flex; /* Alllineamento orizzontale */
+  gap: 1px;
+}
+
+.breadcrumb a {
+  color: black; 
+  text-decoration: none; 
+  padding: 0 8px; /* Space between breadcrumbs */
+  transition: color 0.3s; /* Smooth transition */
+}
+
+.breadcrumb a:hover {
+  color: #0056b3; 
+}
+
+/* separazione breadcrumbs */
+.breadcrumb li {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb li:not(:last-child)::after {
+  content: "|"; /* simbolo separazione */
+  color: black;
+  margin-left: 0.2px; /* Spazio separatore */
+}
+
+/* search bar */
+.searchbar input {
+  border-radius: 5px;
+}
+
+.searchbar button[type="submit"] {
+  font-size: 12px;
+  color: black;
+}
+
+
+/* scopri di più sull'opera */
+div p {
+  font-size: 20px;
+  color: black;
+  margin-bottom: 10px; 
+  margin-top: 10px;
+}
+
+.btn.bg-green {
+  display: inline-block; 
+  padding: 10px 20px; 
+  background-color: #DDE5B6;
+  color: #black; 
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 5px; 
+  font-weight: bold;
+}
+
+.btn.bg-green:hover {
+  background-color: #ADC178; 
+  color: black; 
+}
+
+
+
+
+/* colonna di destra */
+.rightcolumn {
+  width: 80%; 
+  padding: 15px;
+}
+
+.rightcolumn h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.border-section {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+ 
+ .responsive {
+  width: 100%; 
+  height: auto;
+}
+
+.img-item {
+  border-radius: 5px; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+  width: 35%;
+  height: auto;
+}
+
+.bg-gray {
+  background-color: #fefae0;
+}
+
+.metadata {
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+
+.pd-12 {
+  padding: 12px;
+}
+
+.metadata p span {
+  font-weight: bold;
+  color: #333;
+}
+
+.rightcolumn .metadata:last-of-type {
+  font-style: italic; /* descrizioni in corsivo */
+  line-height: 1.6;
+  margin-top: 20px; /* Spazio tra descrizione e metadati sopra */
+}
+
