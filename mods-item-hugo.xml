@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mods xmlns="http://www.loc.gov/mods/v3" version="3.7">
+    <!-- Titolo dell'opera -->
+    <titleInfo>
+        <title>Le Burg au clair de lune</title>
+    </titleInfo>
+
+    <!-- Nome dell'autore con il ruolo di "artista" -->
+    <name type="personal">
+        <namePart>Hugo, Victor</namePart>
+        <namePart type="date">1802-1885</namePart>
+        <role>
+            <roleTerm type="text">illustrator</roleTerm>
+        </role>
+    </name>
+
+    <!-- Data di creazione -->
+    <originInfo>
+        <dateCreated encoding="w3cdtf" qualifier="approximate">1857-1858</dateCreated> <!-- w3cdtf" sta per W3C Date and Time Format, uno standard del World Wide Web Consortium (W3C) per la descrizione di date -->
+    </originInfo>
+
+    <!-- Datazione in secolo -->
+    <originInfo>
+        <dateOther qualifier="century">3e quart du 19e siècle</dateOther>
+    </originInfo>
+
+    <!-- Tipo d'oggetto -->
+    <typeOfResource>disegno</typeOfResource>
+
+    <!-- Tipo e classificazione dell'oggetto in linea più generale-->
+    <genre authority="aat">Disegno</genre> <!-- aat sta per Art & Architecture Thesaurus, vocabolario controllato sviluppato dal Getty Reserach Institute -->
+    <genre authority="aat">Arti grafiche</genre>
+
+    <!-- Materiali e tecniche utilizzate -->
+    <physicalDescription>
+        <form authority="aat">Plume (arts graphiques)</form>
+        <form authority="aat">Lavis</form>
+        <form authority="aat">Pierre noire</form>
+        <form authority="aat">Gouache</form>
+        <form authority="aat">Gratté</form>
+        <form authority="aat">Pochoir</form>
+        <form authority="aat">Carton</form>
+    </physicalDescription>
+
+    <!-- Dimensioni dell'opera -->
+    <physicalDescription>
+        <extent>Altezza : 29.2 cm; Larghezza : 16 cm</extent>
+    </physicalDescription>
+
+    <!-- Descrizione dell'oggetto e commenti -->
+    <abstract>Disegno su cartone</abstract>
+    <note type="inscription">Firma - in basso, a sinistra, a gouache : "VICTOR HUGO"</note>
+
+    <!-- Descrizione iconografica -->
+    <note type="iconographic">
+        Tra la terra immersa nell'ombra e il cielo appena squarciato da un raggio pallido, la torre di un borgo appare solitaria." (Jean Sergent)
+    </note>
+
+    <!-- Modalità e data di acquisizione -->
+    <accessCondition type="acquisition">Donazione</accessCondition>
+    <originInfo>
+        <dateOther>1903</dateOther>
+    </originInfo>
+
+    <!-- Istituzione che conserva l'opera e numero di inventario -->
+    <location>
+        <physicalLocation>Maison de Victor Hugo - Hauteville House</physicalLocation>
+        <shelfLocator>Numero di inventario: 26</shelfLocator>
+    </location>
+
+    <!-- Lingua del file di metadati -->
+    <language>
+        <languageTerm authority="iso639-2b" type="code">fre</languageTerm>
+    </language>
+</mods>

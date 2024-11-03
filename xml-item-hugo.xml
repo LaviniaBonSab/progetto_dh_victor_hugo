@@ -1,9 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<catalogo>
- <item tipo="modello">
-  
- </item>
 
- <item n="1">
- </item>
-</catalogo>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Le Burg au clair de lune</title>
+                <author>Victor Hugo</author>
+                <respStmt>
+                    <name>Jean Sergent</name>
+                    <resp>Descrizione iconografica</resp>
+                </respStmt>
+                <respStmt>
+                   <resp>Metadatazione in lingua italiana</resp>
+				   <name xml:id="LBS">Lavinia Bonfatti Sabbioni</name>
+				</respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Maison de Victor Hugo - Hauteville House</publisher>
+                <date when="1903">Acquisizione: 1903</date>
+                <availability>
+                    <p>Maison de Victor Hugo</p>
+                </availability>
+            </publicationStmt>    
+            <sourceDesc>
+            	<sourceIdentifier>
+                  <idno type="26">Questo disegno fa parte della collezione della Maison de Victor Hugo, Hauteville House. Numero d’inventario: 26.</idno>
+                </sourceIdentifier>
+                <date when="1857-1858">Creazione del disegno intorno al 1857-1858</date>
+                <date>datazione in secolo: terzo quarto del diciannoversimo secolo</date>
+                <language ident="fr">francese</language>
+                <objectDesc>
+                	<p>Description iconographique: Entre la terre baignée d'ombre et le ciel à peine déchiré d'un rayon pâle, la tour d'un burg apparaît seule.</p>
+                </objectDesc>
+                <handDesc>
+                	<handNote>Firma - In basso, a sinistra, a gouache: 'VICTOR HUGO'</handNote>
+                </handDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="metadata">
+			    <p>Tipo di oggetto: Arti grafiche</p>
+			    <p>Denominazione: Disegno</p>
+			    <p>Materiali e tecniche: Penna, Lavis, Pietra nera, Gouache, Grattato, Stencil, Cartone</p>
+			    <p>Dimensioni: Altezza: 29.2 cm, Larghezza: 16 cm</p>
+			    <p>Marchi, iscrizioni: In basso, a sinistra, a gouache: "VICTOR HUGO"</p>
+			</div>
+			<div type="creation">
+			    <p>Data di produzione: Circa 1857–1858</p>
+			    <p>Datazione in secolo: 3º quarto del XIX secolo</p>
+			    <p>Modalità di acquisizione: Donazione diretta</p>
+			</div>
+			<div type="description">
+			    <p>Descrizione iconografica: Tra la terra immersa nell'ombra e il cielo appena rischiarato da un pallido raggio, appare sola la torre di un castello.</p>
+			</div>
+        </body>
+    </text>
+</TEI>

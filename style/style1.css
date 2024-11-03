@@ -90,15 +90,9 @@ body, html {
 
 /* The hero image */
 .hero-image {
-  /* Use "linear-gradient" to add a darken background effect to the image. This will make the text easier to read */
-  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/maisons.jpg");
-
-  /* dimensioni img */
-  height: 50%;
-  width: 40%
-
-  /* posizione e centratura img Position and center the image to scale nicely on all screens */
-  background-position: center;
+  background-image: url('file:///C:/Users/Lavinia/Desktop/ESAME_DH_SITO_WEB/img/VH.jpg'); 
+  max-width: 100%;
+  height: 75%;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -112,12 +106,29 @@ body, html {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  font-family: Abhaya Libre;
+}
+
+.hero-text h1 {
+  text-align: center;
+  top: 80%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: Abhaya Libre;
+  font-size: 70px;
 }
 
 .hero-text button {
   font-size: 16px;
   color: #fff;
   text-decoration: none;
+  border-style: solid;
+  border-color: #003049;
+  background-color: transparent;
+  border-radius: 7px;
+
+
 }
 
 .hero-text button:hover {
@@ -125,6 +136,11 @@ body, html {
   background-color: #;
 }
 
+.hero-text button a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #fefae0;
+}
 
 /* progetto */
 
@@ -252,6 +268,13 @@ button {
 }
 
 
+/* grid container */
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+  grid-auto-rows: 200px;
+}
 
 
 /* Cards */
@@ -274,7 +297,7 @@ button {
 
 
 .grid-item {
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
 }
@@ -392,6 +415,11 @@ button {
 }
 
 /* search bar */
+
+form.searchBar {
+  width: fit-content;
+}
+
 .searchbar input {
   border-radius: 5px;
 }
@@ -426,6 +454,9 @@ div p {
   color: black; 
 }
 
+.btn.bg-green a {
+  text-decoration: none;
+}
 
 
 
@@ -483,3 +514,10 @@ div p {
   margin-top: 20px; /* Spazio tra descrizione e metadati sopra */
 }
 
+.metadataIcon {
+  height: 15px;
+  margin-left: 5px;
+}
+.metadata p span sup a { 
+  vertical-align: super;
+}
