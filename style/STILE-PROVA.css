@@ -1,0 +1,124 @@
+/* TUTTE LE PAGINE PRIMA */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Abhaya Libre;
+  font-size: 20px;
+  background-color: #ede0d4;
+}
+
+nav a {
+  color: #e6ccb2;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-weight: 500;
+  font-optical-sizing: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+h3 {
+  color: #003049;
+  font-size: 22px;
+  margin-bottom: 20px;
+  letter-spacing: 0.8px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+footer {
+  font-size: smaller;
+  background-color: #fefae0;
+  text-align: center;
+  padding: 1.5%;
+  width: 100%;
+
+}
+
+footer.dark a {
+  text-decoration: none;
+  color: black;
+}
+
+
+/* INDEX */
+
+
+/* Navbar*/
+nav.main {
+ padding: 10px;
+}
+
+
+/* Navbar container */
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #fefae0;
+}
+
+/* Main navigation bar styles */
+nav.main {
+  display: flex;
+  gap: 10px; /* Spazio tra items navbar */
+}
+
+nav.main a {
+  color: #003049;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+footer.dark {
+ text-align: center;
+ width: 100%;
+}
